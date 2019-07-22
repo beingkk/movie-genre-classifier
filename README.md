@@ -79,7 +79,7 @@ The processed text was vectorized using [tf-idf](https://en.wikipedia.org/wiki/T
 
 ### Model
 
-The movie genres were estimated by using [one-versus-rest approach](https://en.wikipedia.org/wiki/Multiclass_classification#One-vs.-rest), where for each class (i.e., movie genre) a seperate classifier is trained. This method provides a confidence score for each genre, allowing to implement multi-class classification. While this approach does not take into account possible correlations between the clases that might aid in the classification task (e.g., Action movies are also likely to be Thrillers), it is computationally inexpensive compared to other, more complex methods: The computational load scales linearly as *O*(*#classes*).
+The movie genres were estimated by using [one-versus-rest approach](https://en.wikipedia.org/wiki/Multiclass_classification#One-vs.-rest), where for each class (i.e., movie genre) a separate classifier is trained. This method provides a confidence score for each genre, allowing to implement multi-class classification. While this approach does not take into account possible correlations between the classes that might aid in the classification task (e.g., Action movies are also likely to be Thrillers), it is computationally inexpensive compared to other, more complex methods: The computational load scales linearly as *O*(*#classes*).
 
 Three different classifiers were very briefly tested, and the best was found to be the [Logistic regression classifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), which is then also used in the app. The particular threshold value at which to make the binary decision about the assignment of the genre was also tuned to obtain the best performance (as measured by the [F1 score](https://en.wikipedia.org/wiki/F1_score), which reflects both precision and recall of the model; see the graph below)
 
@@ -112,7 +112,7 @@ $ python3 movie_classifier.py --title "Chilling Adventures of Sabrina" --descrip
 }
 ```
 
-Similary, also for two different synposis of Stanley Kubrick's "Paths of Glory". Note that in both cases the model proposes new genres in addition to the ones that were provided in the original dataset (War and Drama)
+Similarly, also for two different synopses of Stanley Kubrick's "Paths of Glory". Note that in both cases the model proposes new genres in addition to the ones that were provided in the original dataset (War and Drama)
 
 ```shell
 $ python3 movie_classifier.py --title "Paths of Glory" --description "During World War I, commanding officer General Broulard (Adolphe Menjou) orders his subordinate, General Mireau (George Macready), to attack a German trench position, offering a promotion as an incentive. Though the mission is foolhardy to the point of suicide, Mireau commands his own subordinate, Colonel Dax (Kirk Douglas), to plan the attack. When it ends in disaster, General Mireau demands the court-martial of three random soldiers in order to save face."
