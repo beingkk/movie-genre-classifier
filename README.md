@@ -11,7 +11,7 @@ The essential dependencies for running the app are collected in `requirements.tx
   - [joblib](https://joblib.readthedocs.io/en/latest/) for ensuring model persistence,
   - [scikit-learn](https://scikit-learn.org/stable/index.html) for machine learning classification tools.
 
-Full list of dependencies necessary for development purposes (e.g., for retraining the model) is collected in `requirements_dev.txt`, which include
+Full list of dependencies necessary for development purposes (e.g., for retraining the model) is collected in `requirements_dev.txt`, which also include
   - [pandas](https://pandas.pydata.org/) for dealing with datasets
   - [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org) for data visualization
   - [jupyter](https://jupyter.org/)
