@@ -40,7 +40,7 @@ $ python3 movie_classifier.py --title "The Matrix" --description "A programmer i
 }
 ```
 
-Note that the app outputs several genres in order to provide the user with a better insight about the nature of the movie under question. The genres are displayed in a descending order with respect to the confidence (or probability) that the classification algorithm has assigned. For example, in the case shown above, the algorithm regards "The Matrix" more as Science Fiction.
+Note that the app outputs several genres in order to provide the user with a better insight about the nature of the movie under question. The genres are displayed in a descending order with respect to the confidence (probability) that the classification algorithm has assigned. For example, in the case shown above, the algorithm regards "The Matrix" more as Science Fiction.
 
 ### Running with Docker
 
