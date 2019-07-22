@@ -44,7 +44,7 @@ Note that the app outputs several genres in order to provide the user with a bet
 
 ### Running with Docker
 
-It is also possible to use a [Docker](cloud.docker.com/u/karliskanders/repository/docker/karliskanders/movie-classifier/) image to run the app. In this case, the syntax is slightly different (see also `Dockerfile` for implementation details):
+It is also possible to use a [Docker](https://cloud.docker.com/u/karliskanders/repository/docker/karliskanders/movie-classifier/) image to run the app. In this case, the syntax is slightly different (see also `Dockerfile` for implementation details):
 
 ```shell
 $ docker run -e title="The Matrix" -e description="A programmer is brought back to reason and reality when learning he was living in a program created by gigantic machines which make human birth artificial. In order to set humanity free, Neo will have to face many enemies by using technologies and self-trust" karliskanders/movie-classifier
