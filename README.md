@@ -83,7 +83,8 @@ The movie genres were estimated by using [one-versus-rest approach](https://en.w
 
 Three different classifiers were very briefly tested, and the best was found to be the [Logistic regression classifier](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), which is then also used in the app. The particular threshold value at which to make the binary decision about the assignment of the genre was also tuned to obtain the best performance (as measured by the [F1 score](https://en.wikipedia.org/wiki/F1_score), which reflects both precision and recall of the model; see the graph below)
 
-![pipe_lr.png](https://github.com/beingkk/movie-genre-classifier/blob/master/pipe_lr.png?raw=true)
+<center>
+  <img src="https://github.com/beingkk/movie-genre-classifier/blob/master/pipe_lr.png?raw=true" width=50% height=50%></center>
 
 This particular model shown above is presently also saved as a "benchmark" `movie_genre_classifier_benchmark.joblib`. The model can be retrained and changed using `Training.ipynb`, and the new model can then be compared with this "benchmark" by running `tests.py`.
 
