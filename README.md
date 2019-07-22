@@ -86,7 +86,7 @@ Three different classifiers were very briefly tested, and the best was found to 
 <center>
   <img src="https://github.com/beingkk/movie-genre-classifier/blob/master/pipe_lr.png?raw=true" width=50% height=50%></center>
 
-This particular model shown above is presently also saved as a "benchmark" `movie_genre_classifier_benchmark.joblib`. The model can be retrained and changed using `Training.ipynb`, and the new model can then be compared with this "benchmark" by running `tests.py`.
+This particular model shown above is presently also saved as a "benchmark" `movie_genre_classifier_benchmark.joblib`. By using `Training.ipynb`, a new model can be retrained and saved over `movie_genre_classifier.joblib`, and the new model can then be compared with the "benchmark" by running `tests.py`.
 
 ### Final remarks
 
