@@ -92,7 +92,7 @@ This particular model shown above is presently also saved as a "benchmark" `movi
 
 The modelling approach taken here has been rather simple, and it is foreseeable that the performance in terms of F1 score could be improved by tuning the parameters, or employing classification approaches that take into account correlations between genres. Another important issue is that the dataset is imbalanced (i.e., some genres like Drama and Comedy are much more common than, e.g., War or Western). This in principle should be somehow addressed, e.g, by undersampling the overrepresented genres or synthesizing more examples of the underrepresented genres (if the underlying data structure permits that).
 
-Nonetheless, the present model already exhibits quite nice behavior. For example, different synopsis of the same show yield congruent inferences:
+Nonetheless, the present model already exhibits quite nice behavior. For example, different synopses of the same show yield congruent inferences:
 
 ```shell
 $ python3 movie_classifier.py --title "Chilling Adventures of Sabrina" --description "Reimagines the origin and adventures of Sabrina: the Teenage Witch as a dark coming-of-age story that traffics in horror, the occult and, of course, witchcraft. Tonally in the vein of Rosemary's Baby and The Exorcist, this adaptation finds Sabrina Spellman wrestling to reconcile her dual nature - half-witch, half-mortal - while standing against the evil forces that threaten her, her family and the daylight world humans inhabit."
