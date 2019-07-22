@@ -20,10 +20,10 @@ Full list of dependencies necessary for development purposes (e.g., for retraini
 To get the app and install the dependencies, navigate to a convenient directory and run the following commands from the terminal:
 
 ```shell
+$ git clone https://github.com/beingkk/movie-genre-classifier
+$ cd movie-genre-classifier
 $ python3 -m venv movie_genre_classifier
 $ source movie_genre_classifier/bin/activate
-
-$ git clone https://github.com/beingkk/movie-genre-classifier
 $ pip3 install -r requirements.txt
 ```
 
@@ -32,7 +32,7 @@ $ pip3 install -r requirements.txt
 To start predicting movie genres, try the following:
 
 ```shell
-$ python3 movie_classifier.py --title "The Matrix" --description "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+$ python3 movie_classifier.py --title "The Matrix" --description "A programmer is brought back to reason and reality when learning he was living in a program created by gigantic machines which make human birth artificial. In order to set humanity free, Neo will have to face many enemies by using technologies and self-trust."
 {
     "title": "The Matrix",
     "description": "A programmer is brought back to reason and reality when learning he was living in a program created by gigantic machines which make human birth artificial. In order to set humanity free, Neo will have to face many enemies by using technologies and self-trust.",
