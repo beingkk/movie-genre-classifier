@@ -112,7 +112,7 @@ $ python3 movie_classifier.py --title "Chilling Adventures of Sabrina" --descrip
 }
 ```
 
-Similarly, also for two different synopses of Stanley Kubrick's "Paths of Glory". Note that in both cases the model proposes new genres in addition to the ones that were provided in the original dataset (War and Drama)
+Similarly, also for two different synopses of Stanley Kubrick's "Paths of Glory". Note that in both cases the model proposes new suitable genres in addition to the ones that were provided in the original dataset (War and Drama)
 
 ```shell
 $ python3 movie_classifier.py --title "Paths of Glory" --description "During World War I, commanding officer General Broulard (Adolphe Menjou) orders his subordinate, General Mireau (George Macready), to attack a German trench position, offering a promotion as an incentive. Though the mission is foolhardy to the point of suicide, Mireau commands his own subordinate, Colonel Dax (Kirk Douglas), to plan the attack. When it ends in disaster, General Mireau demands the court-martial of three random soldiers in order to save face."
