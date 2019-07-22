@@ -58,7 +58,7 @@ $ docker run -e title="The Matrix" -e description="A programmer is brought back 
 
 ## Implementation of the classification algorithm
 
-The full step by step implementation of the data preparation and genre classification algorithm can be found in the jupyter notebook `Training.ipynb`.
+The full step by step implementation of the data preparation and genre classification algorithm can be found in the jupyter notebook `Training.ipynb`. This notebook can be used to either reproduce or iterate and improve upon these results.
 
 ### Data preprocessing
 
