@@ -11,7 +11,7 @@ The essential dependencies for running the app are collected in `requirements.tx
   - [joblib](https://joblib.readthedocs.io/en/latest/) for ensuring model persistence,
   - [scikit-learn](https://scikit-learn.org/stable/index.html) for machine learning classification tools.
 
-Full list of dependencies necessary for development purposes (e.g., for retraining the model) are collected in `requirements_dev.txt`, which include
+Full list of dependencies necessary for development purposes (e.g., for retraining the model) is collected in `requirements_dev.txt`, which also include
   - [pandas](https://pandas.pydata.org/) for dealing with datasets
   - [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org) for data visualization
   - [jupyter](https://jupyter.org/)
@@ -44,7 +44,7 @@ Note that the app outputs several genres in order to provide the user with a bet
 
 ### Running with Docker
 
-It is also possible to use a [Docker](cloud.docker.com/u/karliskanders/repository/docker/karliskanders/movie-classifier/) image to run the app. In this case, the syntax is slightly different (see also `Dockerfile` for implementation details):
+It is also possible to use a [Docker](https://cloud.docker.com/u/karliskanders/repository/docker/karliskanders/movie-classifier/) image to run the app. In this case, the syntax is slightly different (see also `Dockerfile` for implementation details):
 
 ```shell
 $ docker run -e title="The Matrix" -e description="A programmer is brought back to reason and reality when learning he was living in a program created by gigantic machines which make human birth artificial. In order to set humanity free, Neo will have to face many enemies by using technologies and self-trust" karliskanders/movie-classifier
@@ -92,7 +92,7 @@ This particular model shown above is presently also saved as a "benchmark" `movi
 
 The modelling approach taken here has been rather simple, and it is foreseeable that the performance in terms of F1 score could be improved by tuning the parameters, or employing classification approaches that take into account correlations between genres. Another important issue is that the dataset is imbalanced (i.e., some genres like Drama and Comedy are much more common than, e.g., War or Western). This in principle should be somehow addressed, e.g, by undersampling the overrepresented genres or synthesizing more examples of the underrepresented genres (if the underlying data structure permits that).
 
-Nonetheless, the present model already exhibits quite nice behavior. For example, different synopsis of the same show yield congruent inferences:
+Nonetheless, the present model already exhibits quite nice behavior. For example, different synopses of the same show yield congruent inferences:
 
 ```shell
 $ python3 movie_classifier.py --title "Chilling Adventures of Sabrina" --description "Reimagines the origin and adventures of Sabrina: the Teenage Witch as a dark coming-of-age story that traffics in horror, the occult and, of course, witchcraft. Tonally in the vein of Rosemary's Baby and The Exorcist, this adaptation finds Sabrina Spellman wrestling to reconcile her dual nature - half-witch, half-mortal - while standing against the evil forces that threaten her, her family and the daylight world humans inhabit."
@@ -112,7 +112,7 @@ $ python3 movie_classifier.py --title "Chilling Adventures of Sabrina" --descrip
 }
 ```
 
-Similarly, also for two different synopses of Stanley Kubrick's "Paths of Glory". Note that in both cases the model proposes new genres in addition to the ones that were provided in the original dataset (War and Drama)
+Similarly, also for two different synopses of Stanley Kubrick's "Paths of Glory". Note that in both cases the model proposes new suitable genres in addition to the ones that were provided in the original dataset (War and Drama)
 
 ```shell
 $ python3 movie_classifier.py --title "Paths of Glory" --description "During World War I, commanding officer General Broulard (Adolphe Menjou) orders his subordinate, General Mireau (George Macready), to attack a German trench position, offering a promotion as an incentive. Though the mission is foolhardy to the point of suicide, Mireau commands his own subordinate, Colonel Dax (Kirk Douglas), to plan the attack. When it ends in disaster, General Mireau demands the court-martial of three random soldiers in order to save face."
